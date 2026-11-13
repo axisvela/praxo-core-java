@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: Maven Central
 - Install: `Maven: com.axisvela:praxo-core:0.7.0`
 - Documentation: https://axisvela.github.io/praxo-core/languages/java/
+- Examples: https://github.com/axisvela/praxo-core-java/tree/main/language/java/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-java
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/java
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
