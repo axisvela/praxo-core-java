@@ -4,9 +4,9 @@ Dedicated repository for the Java implementation of PRAXO-CORE: an
 embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
-- Package: `com.axisvela:praxo-core` (`0.7.0`)
+- Package: `com.axisvela:praxo-core` (`0.9.0`)
 - Registry: Maven Central
-- Install: `Maven: com.axisvela:praxo-core:0.7.0`
+- Install: `Maven: com.axisvela:praxo-core:0.9.0`
 - Documentation: https://axisvela.github.io/praxo-core/languages/java/
 - Examples: https://github.com/axisvela/praxo-core-java/tree/main/language/java/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-java
