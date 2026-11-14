@@ -77,7 +77,7 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/java/examples/checkpoint) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
-| [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.7.0` artifact from Maven Central in a separate application. It does not compile or import the repository's Java so... |
+| [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.9.0` artifact from Maven Central in a separate application. It does not compile or import the repository's Java so... |
 | [event-sink](language/java/examples/event-sink) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
 | [identity-policy](language/java/examples/identity-policy) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to bind a trusted principal to Core policy authorization. The application owns authentication and principal sto... |
 | [live-model](language/java/examples/live-model) |  |
