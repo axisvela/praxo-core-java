@@ -79,12 +79,14 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | [checkpoint](language/java/examples/checkpoint) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
 | [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.9.0` artifact from Maven Central in a separate application. It does not compile or import the repository's Java so... |
 | [event-sink](language/java/examples/event-sink) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
+| [hitl](language/java/examples/hitl) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to approve one write, then edit it to a target that the policy rejects. |
 | [identity-policy](language/java/examples/identity-policy) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to bind a trusted principal to Core policy authorization. The application owns authentication and principal sto... |
 | [live-model](language/java/examples/live-model) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to connect the Java Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/java/examples/mcp) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` with an in-process `McpTransport`. It needs no server process and no network endpoint. |
 | [provider-fallback](language/java/examples/provider-fallback) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to fall back to a second model when the primary model call fails. |
 | [retry](language/java/examples/retry) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to retry transient model failures without changing the agent loop. |
 | [service](language/java/examples/service) | This example embeds published Maven `com.axisvela:praxo-core:0.7.0` in a standard-library JDK HTTP service. The application supplies a principal and tenant, restricts tools, and... |
+| [session-checkpoint](language/java/examples/session-checkpoint) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` and the checkpoint allowlist to save, restore, and continue a multi-turn session. |
 | [streaming](language/java/examples/streaming) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to consume deltas while the agent loop keeps running normally. |
 | [structured-output](language/java/examples/structured-output) | This example uses published Maven Central `com.axisvela:praxo-core:0.7.0` to turn free text into validated JSON with `StructuredOutput`. |
 
