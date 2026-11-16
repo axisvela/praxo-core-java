@@ -76,6 +76,7 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 
 | Example | What it shows |
 | --- | --- |
+| [advanced-delegation](language/java/examples/advanced-delegation) | This example shows an application-level parent/child agent pattern. The parent agent may call a `delegate` tool but not the child's `record` tool. The delegate tool runs a child... |
 | [checkpoint](language/java/examples/checkpoint) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
 | [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.9.0` artifact from Maven Central in a separate application. It does not compile or import the repository's Java so... |
 | [event-sink](language/java/examples/event-sink) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
@@ -88,7 +89,7 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | [service](language/java/examples/service) | This example embeds published Maven `com.axisvela:praxo-core:0.7.0` in a standard-library JDK HTTP service. The application supplies a principal and tenant, restricts tools, and... |
 | [session-checkpoint](language/java/examples/session-checkpoint) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` and the checkpoint allowlist to save, restore, and continue a multi-turn session. |
 | [streaming](language/java/examples/streaming) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to consume deltas while the agent loop keeps running normally. |
-| [structured-output](language/java/examples/structured-output) | This example uses published Maven Central `com.axisvela:praxo-core:0.7.0` to turn free text into validated JSON with `StructuredOutput`. |
+| [structured-output](language/java/examples/structured-output) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to turn free text into validated JSON with `StructuredOutput`. |
 
 ## Verify
 
