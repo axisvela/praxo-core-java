@@ -85,6 +85,7 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | [live-model](language/java/examples/live-model) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to connect the Java Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/java/examples/mcp) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` with an in-process `McpTransport`. It needs no server process and no network endpoint. |
 | [provider-fallback](language/java/examples/provider-fallback) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to fall back to a second model when the primary model call fails. |
+| [representative-chain](language/java/examples/representative-chain) |  |
 | [retry](language/java/examples/retry) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to retry transient model failures without changing the agent loop. |
 | [service](language/java/examples/service) | This example embeds published Maven `com.axisvela:praxo-core:0.7.0` in a standard-library JDK HTTP service. The application supplies a principal and tenant, restricts tools, and... |
 | [session-checkpoint](language/java/examples/session-checkpoint) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` and the checkpoint allowlist to save, restore, and continue a multi-turn session. |
