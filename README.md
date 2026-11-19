@@ -9,9 +9,9 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 | Package | `com.axisvela:praxo-core` |
 | Registry | [Maven Central](https://repo1.maven.org/maven2/com/axisvela/praxo-core/0.10.0/) |
 | Install | `Maven: com.axisvela:praxo-core:0.10.0` |
-| Source version | `0.10.0` |
+| Source version | `0.11.0` |
 | Published version | `0.10.0` |
-| Source tag | `java/v0.10.0` |
+| Source tag | `java/v0.11.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/java/ |
@@ -22,7 +22,6 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 - OpenAI-compatible model: native
 - Anthropic model: native
 - Gemini model: native
-- Process plugin host: native
 - MCP client: native
 - Harmovela sink: native
 - OpenTelemetry sink: native (transport seam)
@@ -63,9 +62,8 @@ See the [full Java README](language/java/README.md) for complete installation, b
 | Capability | Status | Detail |
 | --- | --- | --- |
 | OpenAI-compatible model | native | `adapters.OpenAICompatibleModel` |
-| Anthropic model | native | `adapters.AnthropicModel` |
-| Gemini model | native | `adapters.GeminiModel`; Gemini SSE streaming |
-| Process plugin host | native | `plugin.ProcessHost`; JSON-Lines stdio, token auth, health, timeout, cancel (runtime verification blocked locally) |
+| Anthropic model | native | `adapters.AnthropicModel`; SSE streaming reassembly |
+| Gemini model | native | `adapters.GeminiModel`; SSE streaming |
 | MCP client | native | `adapters.McpClient`; stdio, plus `McpStreamableHttpTransport` for Streamable HTTP 2025-03-26 (local runtime verification pending) |
 | Harmovela sink | native | `adapters.HarmovelaSink` |
 | OpenTelemetry sink | native (transport seam) | `adapters.OtelSink`; caller supplies OTLP/HTTP transport |
