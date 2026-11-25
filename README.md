@@ -12,9 +12,6 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 | Source version | `0.11.0` |
 | Published version | `0.11.0` |
 | Source tag | `java/v0.11.0` |
-| Tutorial tag | `java/tutorial/v0.1.0` |
-| Application tag | `java/application/v0.1.0` |
-| Examples tag | `java/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/java/ |
