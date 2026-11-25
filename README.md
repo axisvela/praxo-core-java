@@ -12,6 +12,9 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 | Source version | `0.11.0` |
 | Published version | `0.11.0` |
 | Source tag | `java/v0.11.0` |
+| Tutorial tag | `java/tutorial/v0.1.0` |
+| Application tag | `java/application/v0.1.0` |
+| Examples tag | `java/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/java/ |
@@ -91,6 +94,45 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | [session-checkpoint](language/java/examples/session-checkpoint) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` and the checkpoint allowlist to save, restore, and continue a multi-turn session. |
 | [streaming](language/java/examples/streaming) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to consume deltas while the agent loop keeps running normally. |
 | [structured-output](language/java/examples/structured-output) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to turn free text into validated JSON with `StructuredOutput`. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/java/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/java/Tutorial) | Application tutorials live in `Tutorial/`, alongside focused `language/go/examples/`. |
+| [airport-recovery](language/java/Tutorial/airport-recovery) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [api-orchestration](language/java/Tutorial/api-orchestration) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [architecture-graph](language/java/Tutorial/architecture-graph) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [budget-review](language/java/Tutorial/budget-review) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [clinical-guidelines](language/java/Tutorial/clinical-guidelines) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [container-yard](language/java/Tutorial/container-yard) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [credit-diligence](language/java/Tutorial/credit-diligence) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [customs-reroute](language/java/Tutorial/customs-reroute) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [due-diligence](language/java/Tutorial/due-diligence) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [legacy-migration](language/java/Tutorial/legacy-migration) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [medical-coding](language/java/Tutorial/medical-coding) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [order-review](language/java/Tutorial/order-review) | This tutorial embeds the native Java Core in a loopback HTTP application. It uses the same synthetic business service as Python and TypeScript, not a shared remote Agent. The in... |
+| [patent-fto](language/java/Tutorial/patent-fto) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [precedent-outline](language/java/Tutorial/precedent-outline) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [public-approval](language/java/Tutorial/public-approval) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [rpa-reconciliation](language/java/Tutorial/rpa-reconciliation) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [supply-disruption](language/java/Tutorial/supply-disruption) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [tax-review](language/java/Tutorial/tax-review) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [tender-review](language/java/Tutorial/tender-review) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [test-generation](language/java/Tutorial/test-generation) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [trial-screening](language/java/Tutorial/trial-screening) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+| [wealth-service](language/java/Tutorial/wealth-service) | A native Java Core tutorial for a review-only wealth workflow. The Agent has two fixed tools: `read_portfolio` reads synthetic account `acct-100`, and `draft_rebalance` produces... |
+| [zero-trust-review](language/java/Tutorial/zero-trust-review) | A bounded tutorial slice over the native Java Core. It reads one fixed fixture, enforces scope and drafts a review-only result. No production write or external system access. |
+
+## Reference Applications
+
+Complete AI-native reference applications live under `language/java/application`.
+
+| Path | What it shows |
+| --- | --- |
+| [application](language/java/application) | A Spring Boot commerce application where the agent drives the primary shopping workflow: a customer states an intent, the agent searches the application-owned catalog, checks in... |
 
 ## Verify
 
