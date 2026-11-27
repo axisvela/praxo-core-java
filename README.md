@@ -7,12 +7,12 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 | Field | Value |
 | --- | --- |
 | Package | `com.axisvela:praxo-core` |
-| Registry | [Maven Central](https://repo1.maven.org/maven2/com/axisvela/praxo-core/0.12.0/) |
-| Install | `Maven: com.axisvela:praxo-core:0.12.0` |
-| Source version | `0.12.0` |
-| Published version | `0.12.0` |
+| Registry | [Maven Central](https://repo1.maven.org/maven2/com/axisvela/praxo-core/0.12.1/) |
+| Install | `Maven: com.axisvela:praxo-core:0.12.1` |
+| Source version | `0.12.1` |
+| Published version | `0.12.1` |
 | Publication status | published |
-| Canonical source tag | [`java/v0.12.0`](https://github.com/axisvela/praxo-core/tree/java/v0.12.0) |
+| Canonical source tag | [`java/v0.12.1`](https://github.com/axisvela/praxo-core/tree/java/v0.12.1) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/java/ |
@@ -34,7 +34,7 @@ Java implementation of the PRAXO-CORE contract. The normative contract is [`spec
 Install the published package:
 
 ```text
-Maven: com.axisvela:praxo-core:0.12.0
+Maven: com.axisvela:praxo-core:0.12.1
 ```
 
 ```java
@@ -79,7 +79,7 @@ Runnable examples live under [`language/java/examples`](language/java/examples).
 | --- | --- |
 | [advanced-delegation](language/java/examples/advanced-delegation) | This example shows an application-level parent/child agent pattern. The parent agent may call a `delegate` tool but not the child's `record` tool. The delegate tool runs a child... |
 | [checkpoint](language/java/examples/checkpoint) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
-| [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.12.0` artifact from Maven Central in a separate application. It does not compile or import the repository's Java s... |
+| [consumer](language/java/examples/consumer) | This starter installs the published `com.axisvela:praxo-core:0.12.1` artifact from Maven Central in a separate application. It does not compile or import the repository's Java s... |
 | [event-sink](language/java/examples/event-sink) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
 | [hitl](language/java/examples/hitl) | This example uses published Maven Central `com.axisvela:praxo-core:0.9.0` to approve one write, then edit it to a target that the policy rejects. |
 | [identity-policy](language/java/examples/identity-policy) | This example uses published Maven `com.axisvela:praxo-core:0.7.0` to bind a trusted principal to Core policy authorization. The application owns authentication and principal sto... |
