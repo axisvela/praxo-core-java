@@ -1,5 +1,12 @@
 # Java Core Release Notes
 
+## Unreleased
+
+### Security
+
+- Fail conformance when a required vector group is missing or empty, and when
+  an unknown group is present without a runner.
+
 ## 0.12.3 - 2026-11-27
 
 Source tag `java/v0.12.3`.

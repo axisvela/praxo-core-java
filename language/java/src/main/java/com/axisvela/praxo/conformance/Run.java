@@ -30,6 +30,10 @@ import java.util.Map;
 import java.util.Set;
 
 public final class Run {
+    private static final Set<String> REQUIRED_GROUPS = Set.of(
+            "agent-loop", "checkpoint", "context", "event", "jsonschema",
+            "memory", "middleware", "plugin", "policy", "stream", "toolcall");
+
     public static void main(String[] args) throws Exception {
         Path root = ConformanceUtil.repoRoot();
         List<String> failures = runAll(root);
@@ -55,18 +59,28 @@ public final class Run {
                 root.resolve("spec").resolve("SPEC_VERSION")).trim();
         List<String> failures = new ArrayList<>();
         Map<String, String> seen = new HashMap<>();
+        Set<String> found = new LinkedHashSet<>();
         for (Path path : ConformanceUtil.vectorFiles(root)) {
             Map<String, Object> file = Json.object(
                     ConformanceUtil.readString(path));
             String group = ConformanceUtil.string(file, "group");
             String name = path.getFileName().toString().replace(".json", "");
+            if (!REQUIRED_GROUPS.contains(group)) {
+                failures.add(name + ": unknown group");
+                continue;
+            }
+            found.add(group);
             if (!version.equals(ConformanceUtil.string(file, "specVersion"))) {
                 failures.add(name + ": specVersion mismatch");
             }
             if (!name.equals(group)) {
                 failures.add(name + ": group mismatch");
             }
-            for (Object item : ConformanceUtil.array(file.get("vectors"))) {
+            List<Object> vectors = ConformanceUtil.array(file.get("vectors"));
+            if (vectors.isEmpty()) {
+                failures.add(name + ": empty vector group");
+            }
+            for (Object item : vectors) {
                 Map<String, Object> vector = ConformanceUtil.object(item);
                 String id = ConformanceUtil.string(vector, "id");
                 String previous = seen.putIfAbsent(id, group);
@@ -80,6 +94,11 @@ public final class Run {
                             + error.getClass().getSimpleName() + ": "
                             + error.getMessage());
                 }
+            }
+        }
+        for (String required : REQUIRED_GROUPS) {
+            if (!found.contains(required)) {
+                failures.add("missing required group: " + required);
             }
         }
         return failures;
